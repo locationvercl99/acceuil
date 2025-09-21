@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paiement reçu</title>
+
+  <!-- Import de la police Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background: #f7f7f8;
+      color: #222;
+    }
+
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(20,20,40,0.06);
+      padding: 34px;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 12px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sublogo {
+      display: block;
+      margin: 8px auto 18px;
+      max-width: 220px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: #0b2340;
+    }
+
+    p.lead {
+      font-size: 16px;
+      color: #333;
+      margin: 12px 0 18px;
+    }
+
+    .big-image {
+      display: inline-block;
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin: 12px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 420px) {
+      .card { padding: 22px; border-radius: 10px; }
+      h1 { font-size: 20px; }
+      p.lead { font-size: 15px; }
+      .sublogo { max-width: 150px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="card" aria-labelledby="titre-principal">
+      <img class="logo" src="https://zupimages.net/up/25/38/dg48.png" alt="Logo" />
+
+      <img class="sublogo" src="https://zupimages.net/up/25/38/o804.jpg" alt="Sous-logo" />
+
+      <h1 id="titre-principal" style="margin-top:18px;">
+        <strong>Vous avez reçu de l'argent.</strong>
+      </h1>
+
+      <p class="lead">
+        Ce paiement Leboncoin a été déduit du compte du locataire et a été <strong>« APPROUVÉ »</strong> par sa banque.
+      </p>
+
+      <img class="big-image" src="https://zupimages.net/up/25/38/uwi4.gif" alt="Icône paiement approuvé" />
+
+      <p class="lead" style="margin-top: 8px;">
+        Pour recevoir le paiement sur votre compte bancaire, cliquez sur
+      </p>
+
+      <p>
+        <a href="login.html" role="button" aria-label="Recevoir le paiement"
+           style="border: solid 1px #FF6E14FF; padding:15px 15px; border-radius: 20px; background-color:#FF6E14FF; color:#FFFFFF; font-weight:bold; text-decoration:none; display:inline-block;">
+          Recevoir le paiement
+        </a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
